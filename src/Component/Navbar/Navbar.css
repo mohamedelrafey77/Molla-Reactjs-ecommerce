@@ -1,0 +1,118 @@
+nav{
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 0px;
+    width: 100%;
+    height: 60px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+nav .nav-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .open-menu{
+    display: none;
+    margin-bottom: 20px;
+}
+nav .nav-all .logo img{
+    width: 120px;
+    height: auto;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+nav .nav-all .menu{
+    position: relative;
+}
+nav .nav-all .menu ul{
+    padding: 0;
+}
+nav .nav-all .menu ul li{
+    position: relative;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 25px;
+    line-height: 60px;
+    font-size: 17px;
+}
+nav .nav-all .menu ul li a{
+    color: #333;
+    text-transform: uppercase;
+    font-family: 'Tajawal', sans-serif;
+}
+nav .nav-all .menu ul li a svg{
+    font-size: 12px;
+    margin-right: 3px;
+}
+nav .nav-all .menu ul li ul.sub-menu{
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    z-index: 99999;
+    width: 200px;
+    overflow: hidden;
+    padding: 10px 5px;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+nav .nav-all .menu ul li ul.sub-menu li{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    display: block;
+    padding: 0px 10px;
+    margin: 1px 0px;
+}
+nav .nav-all .menu ul li ul.sub-menu li a{
+    display: block;
+    color: #999;
+    font-family: 'Tajawal', sans-serif;
+}
+nav .nav-all .menu ul li:hover a ,
+nav .nav-all .menu ul li ul.sub-menu li:hover a{
+    color: #30508f;
+}
+nav .nav-all .menu ul li:hover ul.sub-menu{
+    opacity: 1;
+    top : 58px;
+    pointer-events: auto;
+}
+nav .nav-all .nav-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+nav .nav-all .nav-right .shopping-cart{
+    margin-left: 15px;
+    position: relative;
+}
+@media only screen and (max-width : 992px){
+    nav .nav-all .menu{
+        display: none;
+    }
+    nav .nav-all .open-menu{
+        display: block;
+    }
+    nav .nav-all .nav-right .search{
+        display: none;
+    }
+    nav .nav-all .logo , 
+    nav .nav-all .nav-right , 
+    nav .nav-all .open-menu{
+        margin-top: 15px;
+    }
+}
